@@ -1,0 +1,57 @@
+body{
+ display: grid;
+ grid-template-columns: 100%;
+ grid-template-rows: 100px auto 100px; 
+ margin: 0px;
+}
+header{
+    background: mediumorchid;
+    grid-row-start: 1;
+    width: 95%;
+    justify-self: center;
+}
+footer{
+    background: mediumslateblue;
+    grid-row-start: 3;
+    width: 95%;
+    justify-self: center;
+}
+.main{
+    grid-row-start: 2;
+    background: mediumturquoise;
+    display:grid;
+    width: 95%;
+    justify-self: center;
+    margin: 10px;
+    grid-template-columns: 90% 10%; 
+}
+
+section{
+    grid-row-start: 1;
+    background: tan;
+}
+
+section h1{
+    text-align: center;
+}
+
+div{
+    padding: 1px;
+    background-color: tomato;
+    height: max-content; 
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px,1fr)); 
+}
+
+aside{
+    background: slategrey;
+    height: fit-content;
+    grid-column-start: 2;
+}
+
+article{
+    width: 300px;
+    height: 200px;
+    background: teal;
+    margin: 20px;
+}

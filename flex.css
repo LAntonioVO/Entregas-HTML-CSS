@@ -1,0 +1,130 @@
+body{
+    display: flex;
+    /* flex-direction: column; */
+    flex-flow: column;
+    margin: 0px;
+    background: url("Precios/img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+    background: mediumorchid;
+    width: 95%;
+    height: 100px;
+    align-self: center;
+    
+}
+footer{
+    background: mediumslateblue;
+    width: 95%;
+    height: 80px;
+    align-self: center;
+}
+.main{
+    background: mediumturquoise;
+    width: 95%;
+    align-self: center;
+    display: flex;
+    flex-flow: row-reverse;
+    margin: 10px;
+    border-radius: 30px;
+}
+aside{
+    background: slategrey;
+    /* align-self: flex-end; */
+    width: 10%;
+}
+section h1{
+    width: 100%;
+    align-self: center;
+    text-align: center;
+}
+
+div{
+    display: flex;
+    background-color: tomato;
+    
+    width: 100%;
+    flex-flow: row wrap;
+    
+}
+
+section{
+    background: tan;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+article{
+    width: 300px;
+    height: 200px;
+    background: teal;
+    margin: 20px;
+    text-align: center;
+}
+
+.loney-toons{
+    background: repeating-radial-gradient(circle,#122E87 0 35px ,#fff 35px 35px,#f00 50px 70px,#fff 70px,#f00 90px 130px,#fff 0,#f00)
+}
+
+.loney-toons img{
+    width: 100px;
+    margin-left: 73px;
+    margin-top: 57px;
+}
+
+.azul-moradito{
+    background: linear-gradient(to bottom right,#309ECF, #B55690);
+}
+
+.hotdog{
+    background: repeating-linear-gradient(60deg,yellow 44px, red 60px);
+}
+
+.azul-blanco{
+    background: repeating-linear-gradient(to bottom left,#122E87 0 5px, white 0 30px);
+}
+.circle{
+    border-radius: 50%;
+}
+
+.circle-button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.circle-button:active{
+    opacity: 50%;
+    
+}
+
+.circle-button:hover{
+    background-color: #f00;
+    color: #fff;
+}
+
+.borders{
+    border-radius: 67px 69px/46px 134px;
+}
+
+@keyframes fly{
+    from{
+        background-position: 0px;
+    }
+    to{
+        background-position: 510px;
+    }
+}
+
+.correr{
+    width: 130px;
+    height: 110px;
+    background-image: url("https://lh3.googleusercontent.com/proxy/Mz_lVRuzb64zftcilfEpQLf9_iF3g7KI0xAXX76rIrgl3AAZGpvIUtv1wp5Gv6B_u2xW_qJ7WBA_CgXmw-aWlUL6SlFuJ5QTe8JivVHqMlyv6HCeN45_FrpyC2c");
+    animation-name: fly;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(4);
+}

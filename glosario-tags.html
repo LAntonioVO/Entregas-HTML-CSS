@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        meta son los metadatos del documento siempre 
+        van dentro de Head, aportan información extra del documento
+    -->
+    <meta charset="UTF-8">
+    <meta content="AntonioV." name="author">
+    <!-- STYLE - define un estilo dentro del documento-->
+    <style>
+        .deprecated{
+            color:crimson;
+        }
+    </style>
+
+    <!-- COMENTAR -->
+<!--    <base href="http://www.biografia.com/page.html">-->
+    <title>Título del documento en la pestaña del navegador</title>
+
+</head>
+<!-- 
+    
+-->
+
+<body>
+    <header>
+        <h1>-Glosario de HTML-</h1>    
+        <p><dfn><strong>body</strong></dfn> <em>(block)</em>- representa el contenido del documento de HTML
+            Sólo puede haber un body en todo el documento
+        </p>
+        <p><dfn><strong>header</strong></dfn> <em>(block)</em> -  representa contenido introducción de la pagina web
+            puede contener logo, formulario de busqueda, nombre de autor, etc
+        </p>
+    </header>
+
+    <p><dfn><strong>hr</strong></dfn> <em>(block)</em> - Es una lina divisoria entre bloques</p>
+    <hr>
+    <main>
+        <p>
+            <dfn><strong>main</strong></dfn> <em>(block)</em> -  representa el contenido principal del body de un documento.
+            el contenido es relacionado directamente del tema principal del documento. 
+        </p>
+        <p> HTML es un lenguaje de marcado de texto que se usa para el desarrollo 
+            de páginas web, mediante el cual se crea la estructura y el formato de
+            la información que se muestra al usuario encerrando esta información enetiquetas
+        </p>
+    </main>
+
+    <!--Encabezados-->
+    <section>
+        <h2>--Encabezados--</h2>
+        <p><dfn><strong>h1,h2,h3,h4,h5,h6</strong></dfn> <em>(block)</em> - Son títulos que representan secciones jerarquicas del documento</p>
+        <h1>h1 - Nivel 1 de encabezados</h1>
+        <h2>h2 - Nivel 2 de encabezados</h2>
+        <h3>h3 - Nivel 3 de encabezados</h3>
+        <h4>h4 - Nivel 4 de encabezados</h4>
+        <h5>h5 - Nivel 5 de encabezados</h5>
+        <h6><strong>h6</strong></dfn> - Nivel 6 de encabezados</h6>    
+    </section>
+    
+
+    <!--Contenido de texto-->
+    <section>
+
+        <p><dfn><strong>ul</strong></dfn> <em>(block)</em> - Usada para representar una lista desordenada (Unorder list) de elementos</p>
+        <p><dfn><strong>ol</strong></dfn> <em>(block)</em> - Usado para representar una lista ordenada (Order list) de elementos</p>
+        <p><dfn><strong>li</strong></dfn> <em>(block)</em> - Usado para representar un item en una lista</p>
+        <p>Mis pasatiempos desordenados son:</p>
+        <ul>
+            <li>Escuchar música</li>
+            <li>Tomar fotografías</li>
+        </ul>
+        <p>Mis 3 artistas favoritos ordenados</p>
+        <ol >
+            <li>Daft Punk</li>
+            <li>Men I Trust</li>
+            <li>Molchat Doma</li>
+        </ol>
+
+        <p>Mis dias favoritos</p>
+        <ol type="a">
+            <li>Miercoles de hotdogs</li>
+            <li>Jueves de pozole</li>
+            <li>Viernes casual</li>
+        </ol>
+
+        <ol type="i">
+            <li>lista 1</li>
+            <li>lista 2</li>
+            <li>lista 3</li>
+        </ol>
+
+        <p>Colores para pintar tu casa:</p>
+        <dl>
+            <dt>Azul</dt>
+            <dd>Azules claros</dd>
+         
+            <dt>Rojo</dt>
+            <dt>Amarillo</dt>
+            <dd>Amarillo patito</dd>
+            <dd>Amarillo limon</dd>
+        </dl>
+
+    </section>
+
+    <section>
+        <h2>--Semantica a nivel de texto--</h2>
+        <p><dfn><strong>a</strong></dfn> <em>(inline)</em> - Un Anchor Tag representa un hipervinculo a otro recurso, pagina web, url o sección del documento.
+            puede abrirse en:
+            _self: en la propia página
+            _blank: nueva pestaña
+            _parent: en la propia pagina
+            _top: en la propia pagina
+        </p>
+        <a href="https://www.google.com" target="_blank">Ir a Google</a>
+        <a href="Biografia.html" target="_self">Biografía</a>
+        <a href="#footer" target="_blank">Ir a footer</a>
+
+        <p><dfn><strong>abbr</strong></dfn> <em>(inline)</em> - Representa una abrebiación o acronimo, donde el atributo title contiene la 
+            descripcion del contenido abrebiado
+        </p>
+        <p>
+            Estoy aprendiendo <abbr title="Hyper Text Markup Language">HTML</abbr> y pronto aprenderé
+            hojas de estilo con <abbr title="Cascading Style Sheets">CSS</abbr>
+        </p>
+        
+        <p><dfn><strong>b</strong></dfn> <em>(inline)</em> - Bring Atention to element o Dar atención, es usado para llevar al lector a un punto de atención,
+            sirve para <b>remarcar la atención</b> dentro del texto marcandolo en negrita (bold)
+        </p>
+        
+        <p><dfn><strong>strong</strong></dfn> <em>(inline)</em> - Se utiliza para marcar partes<strong> sumamente</strong> importantes, serias o de urgencia en el texto</p>
+        <p>Este texto es<strong> muy importante!</strong></p>
+
+
+        <p><dfn><strong>em</strong></dfn> <em>(inline)</em> - Se utiliza para marcar <em>énfasis</em> en partes importantes de un texto</p>
+        <p><em>El dinero</em> es importante pero<strong> la salud</strong> lo es más</p>
+
+        <p><dfn><strong>i</strong></dfn> <em>(inline)</em> - Texto Idiomatico,  <i>grosso modo</i> representa una parte del texto que esta fuera del texto normal, ya sea una expresion idiomática, termino técnico, o menclaturas</p>
+
+        <p><dfn><strong>dfn</strong></dfn></dfn> <em>(inline)</em> - La etiqueta de Definicion se usa para indicar un termino a definir dentro de un bloque de texto</p>
+
+        <p><dfn><strong>br</strong></dfn> <em>(inline)</em> - Produce un salto de linea, se utiliza donde es importante los saltos como un poema o dirección</p>
+        <p>
+            Las rosas son rojas <br>
+            Las violetas azules <br>
+            No soy bueno en poesia :(<br>
+        </p>
+
+        <p><dfn><strong>s</strong></dfn> <em>(inline)</em> - Muestra el texto tachado (Strikethrough), para representar cosas que no tengan relevancia</p>
+        <p>Dentro de los textos el <s>texto tachado</s> tiene menor importancia</p>
+
+        <p>
+            <dfn><strong>q</strong></dfn>
+            <em>(inline)</em> - Indica una cita (Quote) corta dentro de un texto, encerrandolos en comillas dobles, para citas largas se necesita usar blockquote
+        </p>
+        <p>
+            Entonces Darth Vader le dijo al mal herido Luke:
+            <q cite="Star Wars V">No Luke, yo soy tu padre</q>
+        </p>
+
+        <p><dfn><strong>cite</strong></dfn> <em>(inline)</em> - Citacion, se usa para describir una referencia a una cita de un trabajo, un libro, una investigación, ensayo, una cancion, una pagina web</p>
+        <p>Para mas información consulte <cite>MDN web docs</cite></p>
+
+        <p><dfn><strong>kbd</strong></dfn> <em>(inline)</em> - Keyboard Input o Entrada de Teclado marca el texto que debe introducir el usuario</p>
+        <p> Si esta de acuerdo con los terminos y condiciones presione <kbd>Aceptar</kbd></p>
+
+        <p><dfn><strong>mark</strong></dfn> <em>(inline)</em> - Representa un texto remarcado como marcatexto para referencias o notas, el texto remarcado es de alguna <mark> relevancia o importancia </mark> en el texto</p>
+
+        <p><dfn><strong>samp</strong></dfn> <em>(inline)</em> - Sample o ejemplo, se usa para representar texto como salida de un programa de computadora.</p>
+        <p>Mi computadora me decía: <br><samp>Boot Error<br>Press F1 to continue</samp></p>
+
+        <p><dfn><strong>bdo</strong></dfn> <em>(inline)</em> - Bidireccional Text Override, sobreescribe la direccion del texto y la cambia hacia otra direccion ltr de izquierda a derecha y rtl de derecha a izquierda</p>
+        <p>
+            Este es un texto normal <br>
+            <bdo dir="rtl">Este es un texto alrevez</bdo>
+        </p>
+        
+        <p><dfn><strong>small</strong></dfn> <em>(inline)</em> - representa un texto pequeño, usado para copyright o una declaración legal</p>
+        <p><small>Este contenido esta protegido por Copyright 2020</small></p>
+
+        <p><dfn><strong>ruby</strong></dfn> <em>(inline)</em> - Se utiliza para hacer anotaciones de texto arriba de un texto base, muy util en pronunciacion y traducción de caracteres asiaticos</p>
+        <p><dfn><strong>rp</strong></dfn> <em>(inline)</em> - Ruby Fallback Parentesis, provee de soporte mediante parentesis para buscadores que no soportan las anotaciones ruby</p>
+        <p><dfn><strong>rt</strong></dfn> <em>(inline)</em> - Ruby Text, especifica el contenido en la anotación de ruby</p>
+        <p><ruby>Texto base<rp> (</rp><rt>Anotación</rt><rp>)</rp></ruby></p>
+        <ruby>
+            明日 <rp>(</rp><rt>Ashita</rt><rp>)</rp>
+        </ruby>
+        <ruby>
+            明日 <rt>Ashita</rt></rp>
+        </ruby>
+        
+        <p><dfn><strong>rtc</strong></dfn> <em>(inline)</em> - Representa el conjunto de varios rb para formar una frase</p>
+        <ruby>
+            <rbc>
+                <rb>馬</rb><rp>(</rp><rt>mǎ</rt><rp>)</rp>
+                <rb>來</rb><rp>(</rp><rt>lái</rt><rp>)</rp>
+                <rb>西</rb><rp>(</rp><rt>xī</rt><rp>)</rp>
+                <rb>亞</rb><rp>(</rp><rt>yà</rt><rp>)</rp>
+            </rbc>
+            <rtc>
+                <rp>(</rp><rt>Malaysia</rt><rp>)</rp>
+            </rtc>
+        </ruby>
+
+        <p><dfn><strong>sub</strong></dfn> <em>(inline)</em> - Subscript, especifica un texto que se muestra como subindice</p>
+        <p>El atomo de agua se forma por H<sub>2</sub>O</p>
+        
+        <p><dfn><strong>sup</strong></dfn> <em>(inline)</em> - Superscript, muestra el texto como un super indice</dfn></p>
+        <p>La ecuación mas famosa es la de E=mc<sup>2</sup></p>
+        
+        <p><dfn><strong>time</strong></dfn> <em>(inline)</em> - Representa un periodo específico de tiempo</p>
+        <p>El sol se ocultara a las <time datetime="19:35">19:35</time> horas del <time datetime="2020-07-23">23 de Julio</time></p>
+
+        <p><dfn><strong>span</strong></dfn> <em>(inline)</em> - Contenedor generico sin significado semantico, se usa con propositos de dar estilos a un bloque de texto o elementos mediante class y style</p>
+        <p>Este es un texto en un parrafo donde el <span class="deprecated">span es este bloque de texto</span> para cambiar estilos</p>
+
+        <p><dfn><strong>var</strong></dfn> <em>(inline)</em> - Indica el nombre de una variable matematica o de programación </p>
+        <p>Para sacar el area de un cuadrado utilizamos <var>a</var> = <var>l</var> x <var>l</var> donde <var>l</var> es el tamaño del lado</p>
+
+        <p><dfn><strong>wbr</strong></dfn> <em>(inline)</em> - Representa un salto de linea en una palabra (word break), donde el buscador puede opcionalmente hacer un salto en esa parte</p>
+        <p>Yo sé muy bien que la palabra favorita de Mary Poppins es Supercalifragi<wbr>listico<wbr>espiralidoso</p>
+
+        <p><dfn><strong>code</strong> <em>(inline)</em> - Muestra el texto  indicando el estilo de un fragmento de código.</dfn></p>
+        <p>Este es un hola mundo en Java: 
+            <code> 
+                System.out.println("Hola mundo");
+            </code>
+        </p>
+    </section>
+
+    <!--Agrupación de contenido-->
+    <section>
+        <h2>--Agrupación de contenido --</h2>
+        <p><dfn><strong>p</strong></dfn> <em>(block)</em> - define una parte que debe de mostrarse como un parrafo, como este mismo parrafo</p>
+        
+        <p><dfn><strong>section</strong></dfn> <em>(block)</em> - Indica una sección de una página</p>
+        <section>Seccion 1</section>
+        <section>Seccion 2</section>
+
+        <aside>
+            <dfn><strong>aside</strong></dfn> <em>(block)</em> - representa una seccion de una pagina donde el contenido esta indirectamente
+            relacionado con el contenido principal del documento. como:
+            publicidad, biografía del autor, enlaces a blogs.
+        </aside> 
+
+        <article>
+            <p><dfn><strong>article</strong></dfn> <em>(block)</em> - Representa un contenedor de bloques de contenido, es independiente del sitio web
+            
+            </p>
+        </article>
+
+        <div>
+            <p><dfn><strong>div</strong></dfn> <em>(block)</em> - Es un contenedor simple en bloques</p>
+        </div>
+
+        <p><dfn><strong>nav</strong></dfn> <em>(block)</em> - Representa un conjunto de enlaces para la navegación entre páginas web</p>
+        <nav class="menu">
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Sobre nosotros</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </nav>
+    
+    </section>
+
+    <!--Tablas-->
+    <section>
+        <h2>--Tablas--</h2>
+        <p><dfn><strong>table</strong></dfn> <em>(block)</em> - representa una tabla en 2 dimensiones de filas (row) y columna (col) 
+            <a href="ejercicios-tablas.html"> Ir a ejercicios </a>
+        </p>
+        <p><dfn><strong>tr</strong></dfn> <em>(block)</em> - Define una fila (row) de celdas, detro puede haber una combinacion de td y th</p>
+        <p><dfn><strong>th</strong></dfn> <em>(inline)</em> - Define el encabezado (header) de un grupo de celdas</p>
+        <p><dfn><strong>td</strong></dfn> <em>(inline)</em> - Define una celda en la tabla que contiene datos (data)</p>
+        <table>
+            <caption>Titulo en caption</caption>
+            <tr>
+                <td>-</td>
+                <th>th-Columna1</th>
+                <th>th-Columna2</th>
+            </tr>
+            <tr>
+                <th>th-Fila1</th>
+                <td>td-0,0</td>
+                <td>td-0,1</td>
+            </tr>
+            <tr>
+                <th>th-Fila2</th>
+                <td>td-1,0</td>
+                <td>td-1,1</td>
+            </tr>
+            <tr>
+                <th>th-Fila3</th>
+                <td>td-2,0</td>
+                <td>td-2,1</td>
+            </tr>
+        </table> <br>
+
+        <p><dfn><strong>thead</strong></dfn> <em>(block)</em> - Define un conjunto de celdas los cuales seran el encabezado de las columnas en una tabla</p>
+        <p><dfn><strong>tbody</strong></dfn> <em>(block)</em> - Engloba un conjunto de filas (tr) indicando que es el cuerpo de la tabla</p>
+        <p><dfn><strong>tfoot</strong></dfn> <em>(block)</em> - Define un conjunto de celdas refiriendose a los totales de la tabla</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Encabezado 1</th>
+                    <th>Encabezado 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Fila 1</th>
+                    <td>Dato 1</td>
+                </tr>
+                <tr>
+                    <th>Fila 2</th>
+                    <td>Dato 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Footer1</th>
+                    <th>Footer2</th>
+                </tr>
+            </tfoot>
+        </table>
+
+        <p><dfn><strong>col</strong></dfn> <em>(inline)</em> - Define una columa dentro de una tabla, se usa en conjunto con colgrup para generar varias columnas</p>
+        <p><dfn><strong>colgroup</strong></dfn> <em>(block)</em> - Define un conjunto de columnas para una tabla para dar estilos</p>
+        <table>
+            <colgroup>
+                <col>
+                <col>
+                <col span="2">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Head 1</th>
+                    <th>Head 2</th>
+                    <th>Head 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>uno</td>
+                    <td>dos</td>
+                    <td>tres</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+    <!--Formularios-->
+    <section>
+        <h2>--Formularios--</h2>
+        <p><dfn><strong>form</strong></dfn> <em>(block)</em> - Representa un formulario, consiste en un conjunto de controles que pueden ser enviados al servidor para ser procesados</p>
+        <form action="">
+            <p><dfn><strong>label</strong></dfn> <em>(inline)</em> - Indica el título de un control de formulario</p>
+            <p><dfn><strong>input</strong></dfn> <em>(inline)</em> - Representa un campo de ingreso de datos, puede ser en modo:
+                text, button, radio, checkbuton, color, email, date, datetime,file, image, password
+                range, time, url.
+            </p>
+            <label for="ingresa_nombre">Esta es una label, ingresa un texto:</label>
+            <input type="text" value="Ingrese texto aqui"><br>
+            <input type="radio"> <label for="radiobtn">Este es un radiobuton</label><br>
+            <input type="checkbox"> <label for="check">Este es un checkbox</label><br>
+            <input type="color"> <label for="color">Este es un color</label><br>
+            <input type="date"> <label for="date">Este es un date</label><br>
+            <input type="password"> <label for="password">Este es un password</label><br>     
+            <input type="range" id="b" name="b" value="50"> <label for="slider">Este es un slider</label><br>
+            <input type="file" id=""> <label>Este es un imput de archivos</label><br>
+
+            <p><dfn><strong>select</strong></dfn> <em>(inline)</em> - Representa un control que permite la selección entre un conjunto de opciones</p>
+            <p><dfn><strong>option</strong></dfn> <em>(inline)</em> - Representa una opcion en un elemento select o datalist</p>
+            <label for="elegir_computadora">Elige una marca del select</label>
+            <select name="computadoras" id="Marca">
+                <option value="opcion">Esta es una opcion del select</option>
+                <option value="HP">HP</option>
+                <option value="Acer">Acer</option>
+                <option value="Apple">Apple</option>
+                <option value="Lenovo">Lenovo</option>
+            </select> <br>
+
+            <p><dfn><strong>optgroup</strong></dfn> <em>(inline)</em> - Es un elemento que crea un grupo de opciones en un select</p>
+            <label for="elije_procesador">Elige un procesador:</label>
+            <select name="procesadores" id="procesadores">
+                <optgroup label="Este es un grupo">
+                    <option value="opc1">Opcion 1</option>
+                    <option value="opc2">Opcion 2</option>
+                    <option value="opc3">Opcion 3</option>
+                </optgroup>
+                <optgroup label="Intel">
+                    <option value="i5">i5</option>
+                    <option value="i7">i7</option>
+                    <option value="xeon">Xeon</option>
+                    <option value="atom">Atom</option>
+                </optgroup>
+                <optgroup label="AMD">
+                    <option value="A5">i5</option>
+                    <option value="A9">i7</option>
+                    <option value="Ryzen 7">Ryzen 7</option>
+                </optgroup>
+            </select><br>
+
+            <p><dfn><strong>datalist</strong></dfn> <em>(inline)</em> - Representa un conjunto de opciones predefinidas para otros controles</p>
+            <datalist id="frutas">
+                <option value="Manzana">
+                <option value="Pera">
+                <option value="Platano">
+                <option value="Fresa">
+            </datalist>
+            <label for="elegir_fruta">Elige una fruta del datalist:</label>
+            <input list="frutas" name="fruta"> <br>
+            
+            
+
+            <p><dfn><strong>fieldset</strong></dfn> <em>(block)</em> - Es un conjunto de varios controles de ingreso de datos</p>
+            <p><dfn><strong>legend</strong></dfn> <em>(inline)</em> - Representa el titulo de un fieldset</p>
+            <fieldset>
+                <legend>Este es un legend - Elige un animal del fieldset</legend>
+                <input type="radio" id="perro" name="animal">
+                <label for="">Perro</label><br>
+
+                <input type="radio" id="gato" name="animal">
+                <label for="">Gato</label><br>
+
+                <input type="radio" id="hamster" name="animal">
+                <label for="">Hamster</label><br>
+
+                <label for="">Nombre:</label>
+                <input type="text" id="nombre_animal" name="nombre_animal"><br>
+            </fieldset>
+        
+
+            <p><dfn><strong>textarea</strong></dfn> <em>(inline)</em> - Representa un control de edición de textos soportando varias lineas</p>
+            <label for="escribe">Escribe algo en el textarea:</label><br>
+            <textarea name="texto" id="textarea" cols="30" rows="10"></textarea> <br>
+
+            <p><dfn><strong>meter</strong></dfn> <em>(inline)</em> - Representa un valor escalar dentro de un rango</p>
+            <label for="">Este es un nivel de combustible con un meter</label>
+            <meter id="gasolina"
+                min="0" max="100"
+                low="33" high="66" optimum="80"
+                value="78">
+                at 78/100
+            </meter> <br>
+
+            <p><dfn><strong>progress</strong></dfn> <em>(inline)</em> - Muestra un indicador de cuanto se ha progresado en una tarea</p>
+            <label for="progreso">Progeso:</label>
+            <progress id="progreso" max="100" value="70">70%</progress> <br>
+            
+            <p><dfn><strong>output</strong></dfn> <em>(inline)</em> - Es un elemento donde se puede inyectar datos de un calculo o una acción del usuario</p>
+            <label for="tabla_8">La tabla del 8 con un output:</label>
+            8 x <input oninput="res.value='Output: '+8*parseInt(num.value)" type="number" id="num" value="1"> =
+            <output name="res" >Output: 8</output>
+
+            <p><dfn><strong>button</strong></dfn> <em>(inline)</em> - Representa un botón</p>
+            <button>
+                Botón de enviar
+            </button>
+        </form>
+    </section>
+    
+    <!--Elementos Interactivos-->
+    <section>
+        <h2>--Elementos Interactivos--</h2>
+        <p><dfn><strong>summary</strong></dfn> <em>(block)</em> - Indica un titulo o leyenda para el elemento details</p>
+        <details>
+            <summary>Detalles</summary>
+            <p><dfn><strong>details</strong></dfn> <em>(block)</em> - Crea un widget donde la informacion es mostrada cuando se da clic y se oculta de la misma manera</p>
+        </details>
+        <!-- COMENTAR no soportado por mi buscador-->
+        <p><dfn><strong>dialog</strong></dfn> <em>(block)</em> - Representa un elemento como una cala de dialogo como un alert o una subventana</p>
+        <dialog open>
+            <p>Mi caja de dialogo!</p>
+        </dialog><br><br><br><br>  
+    </section>
+
+    <!--Tag para representar código-->
+
+
+    <!--Tags Descontinuados-->
+    <section>
+        <h2>--Tags Deprecadas o descontinuadas--</h2>
+        <p class="deprecated"><dfn><strong>menu</strong></dfn> <em>(block)</em> - representa un grupo de comandos en forma de una lista de menus</p>
+        <menu type="context" id="popup-menu">
+            <menuitem>Action</menuitem>
+            <menuitem>Another action</menuitem>
+            <hr/>
+            <menuitem>Separated action</menuitem>
+        </menu>        
+        <!---->
+        <p class="deprecated"><dfn><strong>center</strong></dfn> <em>(block)</em> - Muestra un bloque centralizado horizontalmente</p>
+        <center><p>Texto centrado!</p></center>
+        <p class="deprecated"><dfn><strong>u</strong></dfn> <em>(inline)</em> - Unarticulated Annotation, representa un contenedor donde el texto esta <u>subrayado</u></p>
+        <p class="deorecated"><strong></strong></p>
+    </section>
+
+    <hr>
+    <footer id="footer">
+        <p>
+            <dfn><strong>footer</strong></dfn> <em>(block)</em> - define el pie de pagina para una sección, contiene información del autor, derechos de autor,
+            o enlaces relacionados.
+        </p>
+        <address>
+            <dfn><strong>address</strong></dfn> <em>(block)</em> - aporta informacion de contacto de una persona u organización <br>
+            Autor: Luis Antonio Vera Ortega <br>
+            Correo: <a href="mailto:veraortegaantonio@gmail.com">veraortegaantonio@gmail.com</a> <br>
+            Ubicación: <br>
+            Av.Nezahualcoyotl #37 <br>
+            Col.Centro, 90200Calpulalpan,Tlx <br>
+            México <br>
+        </address>
+    </footer>
+</body>
+</html>
